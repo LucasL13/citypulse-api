@@ -44,8 +44,9 @@ This endpoint is the more generic endpoint. It return a JSON object composed by 
 
 ```
 
-To see what the `dataParking` object does contain, refer to [/searchFor/parkingall](#-[POST]-/searchFor/parkingall)
-To see what the `dataWeather` object does contain, refer to [/searchFor/weatherall](#-[POST]-/searchFor/weatherall)
+To see what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api#post-searchforparkingall)
+
+To see what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api#post-searchforweatherall)
 
 
 ### [POST] /searchFor/parkingall
