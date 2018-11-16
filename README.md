@@ -35,12 +35,14 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ### [POST] /searchFor/all
 
-This endpoint is the more generic endpoint. It return a JSON object composed by the JSON object of the parking data and the JSON object of the weather data.
+This endpoint is the more generic endpoint. 
+
+It return a JSON object composed by the JSON object of the parking data and the JSON object of the weather data.
 
 
 ```javascript
 
-{"dataParking": {}, "dataWeather": {}}
+{"dataParking": {'someData'}, "dataWeather": {'someData'}}
 
 ```
 
@@ -61,6 +63,8 @@ To see what the `dataWeather` object does contain, refer to [/searchFor/weathera
 ```
 
 Where `maxEntries` is the number of items you wish to retrieve.
+
+`Output`
 
 This endpoint will return you a JSON parsed following this format : 
 
