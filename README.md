@@ -33,12 +33,24 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 [/searchFor/parkingall](#/searchFor/parkingall)
 
-### [[POST] /searchFor/all]()
+### [POST] /searchFor/all
 
 This endpoint is the more generic endpoint. 
 
 It return a JSON object composed by the JSON object of the parking data and the JSON object of the weather data.
 
+`Input` : JSON Format 
+```javascript 
+{
+    "parameters": {
+        "maxEntries":
+    }
+}
+```
+
+Where `maxEntries` is the number of items you wish to retrieve.
+
+`Output`
 
 ```javascript
 
