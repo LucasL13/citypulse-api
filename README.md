@@ -22,6 +22,16 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ## Utilisation
 
+Pour lancer le serveur API : 
+
+`java -jar TPWoT-LOIGNON.war`
+
+**Attention** Attendre l'apparation du message `Data model loaded : API is running` avant d'éxécuter la moindre requête.
+
+Pour executer des requêtes : 
+
+`@POST` `localhost:8090/`+`endpoint`
+
 ## API Endpoints
 
 
@@ -31,13 +41,3 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 | POST  | searchFor/mapdata  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.mapdata.md) |
 | POST  | searchFor/parking/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.parking.all.md)  |
 | POST  | searchFor/weather/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.weather.all.md) |
-
-### [POST] /searchFor/all
-
-### [POST] /searchFor/parkingall
-
-### [POST] /searchFor/weatherall
-
-### [GET] /searchFor/dataall
-
-
