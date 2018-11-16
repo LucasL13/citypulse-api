@@ -5,7 +5,7 @@
 
 [Technologies](#technologies)
 
-[Utilisation](#utilisation)
+[Usage](#usage)
 
 [API Endpoints](#api-endpoints)
 
@@ -20,19 +20,19 @@ It provide both back-end and front-end service.
 The back-end API runs with JavaEE + Spring and the Jena library (for parsing RDF files and querying with SPARQL langage).
 The front-end service is handled by Angular CLI, supplied with few modules.
 
-## Utilisation
+## Usage
 
-**Pour lancer le serveur API :** 
+**How to run the API Server :** 
 
 `java -jar TPWoT-LOIGNON.war`
 
-###### NB : Attendre l'apparation du message `Data model loaded : API is running` avant d'éxécuter la moindre requête. ######
+###### NB : You may avoid executing any request to the server until the `Data model loaded : API is running` message has spawned. ######
 
-**Pour executer des requêtes :**
+**How to send requests :**
 
  `@POST` `localhost:8090/`+`endpoint`
 
-###### NB : Ne pas oublier d'inclure le corps de la requête au format JSON avec les parametres `input` exigés. ######
+###### NB : Do not forget to include the body of the request (JSON formatted) with the requiered `input` parameters. ######
 
 ## API Endpoints
 
