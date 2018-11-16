@@ -1,10 +1,29 @@
-# citypulse-api
+
+# CityPulse-API
 
 [Presentation](#presentation)
-[Technologies](../blob/master/LICENSE)
-[Utilisation](../blob/master/LICENSE)
-[API Endpoints](../blob/master/LICENSE)
+[Technologies](#technologies)
+[Utilisation](#utilisation)
+[API Endpoints](#api-endpoints)
 
 
 ## Presentation
+
+## Technologies
+
+## Utilisation
+
+## API Endpoints
+
+
+[/searchFor/parkingall](#/searchFor/parkingall)
+[/searchFor/weatherall](#/searchFor/parkingall)
+[/searchFor/parkingall](#/searchFor/parkingall)
+[/searchFor/parkingall](#/searchFor/parkingall)
+
+### [POST] /searchFor/parkingall
+
+### [POST] /searchFor/weatherall
+
+### [GET] /searchFor/dataall
 
