@@ -26,7 +26,7 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 `java -jar TPWoT-LOIGNON.war`
 
-###### NB : You may avoid executing any request to the server until the `Data model loaded : API is running` message has spawned. ######
+###### NB : You should avoid executing any request to the server until the `Data model loaded : API is running` message has spawned. ######
 
 **How to send requests :**
 
