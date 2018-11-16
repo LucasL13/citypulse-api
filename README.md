@@ -33,7 +33,7 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 [/searchFor/parkingall](#/searchFor/parkingall)
 
-### [POST] /searchFor/all
+### [[POST] /searchFor/all]()
 
 This endpoint is the more generic endpoint. 
 
