@@ -1,8 +1,10 @@
 
 # CityPulse-API
 
-[Presentation](#presentation)\s\s
+[Presentation](#presentation)
+
 [Technologies](#technologies)
+
 [Utilisation](#utilisation)
 [API Endpoints](#api-endpoints)
 
