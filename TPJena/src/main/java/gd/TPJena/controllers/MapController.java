@@ -1,5 +1,6 @@
 package gd.TPJena.controllers;
 
+import gd.TPJena.services.MapService;
 import gd.TPJena.services.SPQLService;
 import org.apache.jena.query.*;
 import org.json.JSONObject;
@@ -14,7 +15,7 @@ import java.io.OutputStream;
 public class MapController {
 
     @Autowired
-    SPQLService service;
+    MapService ms;
 
     @Autowired
     ServletContext servletContext;
@@ -32,33 +33,7 @@ public class MapController {
             maxEntries = (Integer) parameters.get("maxEntries");
         System.out.println("Le client demande " + maxEntries + " entrées GPS");
 
-        OutputStream os = new ByteArrayOutputStream();
-
-        String queryString = "prefix sao: <http://iot.ee.surrey.ac.uk/citypulse/resources/ontologies/sao.ttl>" +
-                "\nprefix ct: <http://www.insight-centre.org/citytraffic#>" +
-                "\nprefix ns1: <http://purl.oclc.org/NET/ssnx/ssn#>" +
-                "\nprefix tl: <http://purl.org/NET/c4dm/timeline.owl#>" +
-
-                "\nSELECT DISTINCT ?longitude ?latitude" +
-                "\nWHERE {?point a sao:Point ;" +
-                "\nsao:value ?val ;" +
-                "\nsao:hasUnitOfMeasurement ?unit ;" +
-                "\nns1:featureOfInterest ?foi;" +
-                "\nsao:time _:fpTime." +
-                "\n_:fpTime tl:at ?pTime." +
-                "\n?foi ct:hasFirstNode _:fNode." +
-                "\n_:fNode ct:hasNodeName ?name." +
-                "\n_:fNode ct:hasLongitude ?longitude." +
-                "\n_:fNode ct:hasLatitude ?latitude." +
-                "\n}" +
-                "LIMIT " + maxEntries;
-        Query query = QueryFactory.create(queryString) ;
-        QueryExecution qexec = QueryExecutionFactory.create(query, service.getModelParking()) ;
-        ResultSet results = qexec.execSelect() ;
-        ResultSetFormatter.outputAsJSON(os, results);
-        //System.out.println(((ByteArrayOutputStream) os).toString());
-
-        return ((ByteArrayOutputStream) os).toString();
+        return ms.getMapdata(maxEntries);
     }
 
 }
