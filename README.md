@@ -35,6 +35,11 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ### [POST] /searchFor/parkingall
 
+`Input` : JSON Format ```json {'parameters':{'maxEntries':}} ```
+Where `maxEntries` is the number of items you wish to retrieve.
+
+This endpoint will return you a JSON parsed following this format : 
+
 ```json
 {
   "head": {
@@ -54,7 +59,7 @@ The front-end service is handled by Angular CLI, supplied with few modules.
         "setEnd": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-11-13T23:59:59" }
       } ,
       {
-        second point etc..
+        "another entry etc"
       }
     ]
   }
