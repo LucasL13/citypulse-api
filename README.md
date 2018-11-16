@@ -27,9 +27,10 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 | Protocol  | Path  | Documentation  |
 |---|---|---|
-| a  | b  | c  |
-|   |   |   |
-|   |   |   |
+| POST  | searchFor/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/searchFor.all.md)  |
+| POST  | searchFor/mapdata  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/searchFor.mapdata.md) |
+| POST  | searchFor/parking/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/searchFor.parking.all.md)  |
+| POST  | searchFor/weather/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/searchFor.weather.all.md) |
 
 ### [POST] /searchFor/all
 
