@@ -33,10 +33,54 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 [/searchFor/parkingall](#/searchFor/parkingall)
 
+### [POST] /searchFor/all
+
+```javascript
+
+{{
+  "head": {
+    "vars": [ "point" , "val" , "unit" , "name" , "longitude" , "latitude" , "pTime" , "setStart" , "setEnd" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "point": { "type": "uri" , "value": "http://iot.ee.surrey.ac.uk/citypulse/datasets/parking/parkingDataStream#observations_point_8o3ld4h0ibof5pv4n6mjanv7g8" } ,
+        "val": { "type": "literal" , "value": "26" } ,
+        "unit": { "type": "uri" , "value": "http://purl.oclc.org/NET/muo/citypulse/unit/trafficvehicle-count" } ,
+        "name": { "type": "literal" , "value": "Parking Information With ID 8o3ld4h0ibof5pv4n6mjanv7g8" } ,
+        "longitude": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "10.2049" } ,
+        "latitude": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#decimal" , "value": "56.15679" } ,
+        "pTime": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-09-14T02:01:49" } ,
+        "setStart": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-10-01T00:00:00" } ,
+        "setEnd": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-11-13T23:59:59" }
+      }
+    ]
+  }
+}
+,{
+  "head": {
+    "vars": [ "unit" , "val" , "setStart" , "setEnd" ]
+  } ,
+  "results": {
+    "bindings": [
+      {
+        "unit": { "type": "uri" , "value": "http://purl.oclc.org/NET/muo/ucum/unit/fractionpercent" } ,
+        "val": { "type": "literal" , "value": "73" } ,
+        "setStart": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-08-01T00:00:00" } ,
+        "setEnd": { "type": "literal" , "datatype": "http://www.w3.org/2001/XMLSchema#dateTime" , "value": "2014-09-30T00:00:00" }
+      }
+    ]
+  }
+}
+}
+
+```
+
+
 ### [POST] /searchFor/parkingall
 
 `Input` : JSON Format 
-```json 
+```javascript 
 {
     "parameters": {
         "maxEntries":
@@ -48,7 +92,7 @@ Where `maxEntries` is the number of items you wish to retrieve.
 
 This endpoint will return you a JSON parsed following this format : 
 
-```ruby
+```javascript
 {
     "head": {
         "vars": ["point", "val", "unit", "name", "longitude", "latitude", "pTime", "setStart", "setEnd"]
@@ -108,4 +152,5 @@ This endpoint will return you a JSON parsed following this format :
 ### [POST] /searchFor/weatherall
 
 ### [GET] /searchFor/dataall
+
 
