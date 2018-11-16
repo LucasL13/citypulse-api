@@ -22,18 +22,14 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ## Utilisation
 
-Pour lancer le serveur API : `java -jar TPWoT-LOIGNON.war`
+**Pour lancer le serveur API :** `java -jar TPWoT-LOIGNON.war`
 
-**Attention** 
-
-###### Attendre l'apparation du message `Data model loaded : API is running` avant d'éxécuter la moindre requête. ######
+###### NB : Attendre l'apparation du message `Data model loaded : API is running` avant d'éxécuter la moindre requête. ######
 
 
-Pour executer des requêtes : `@POST` `localhost:8090/`+`endpoint`
+**Pour executer des requêtes :** `@POST` `localhost:8090/`+`endpoint`
 
-**Attention**
-
-###### Ne pas oublier d'inclure le corps de la requête au format JSON avec les parametres `input` exigés. ######
+###### NB : Ne pas oublier d'inclure le corps de la requête au format JSON avec les parametres `input` exigés. ######
 
 ## API Endpoints
 
