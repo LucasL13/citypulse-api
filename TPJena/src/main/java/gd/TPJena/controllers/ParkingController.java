@@ -37,13 +37,32 @@ public class ParkingController {
         System.out.println("Le client demande " + maxEntries + " entrées GPS");
 
         OutputStream os = new ByteArrayOutputStream();
+        OutputStream os2 = new ByteArrayOutputStream();
 
         String queryString = "prefix sao: <http://iot.ee.surrey.ac.uk/citypulse/resources/ontologies/sao.ttl>" +
                 "\nprefix ct: <http://www.insight-centre.org/citytraffic#>" +
                 "\nprefix ns1: <http://purl.oclc.org/NET/ssnx/ssn#>" +
                 "\nprefix tl: <http://purl.org/NET/c4dm/timeline.owl#>" +
 
-                "\nSELECT ?point ?val ?unit ?name ?longitude ?latitude ?pTime ?setStart ?setEnd" +
+                "\nSELECT ?SEStart ?SEEnd" +
+                "\nWHERE {" +
+                "\n?sEvent a sao:streamEvent;" +
+                "\nsao:time _:sEventTime." +
+                "\n_:sEventTime tl:start ?SEStart." +
+                "\n_:sEventTime tl:end ?SEEnd." +
+                "\n}" +
+                "LIMIT " + maxEntries;
+        Query query = QueryFactory.create(queryString);
+        QueryExecution qexec = QueryExecutionFactory.create(query, service.getModelParking());
+        ResultSet results = qexec.execSelect();
+        ResultSetFormatter.outputAsJSON(os, results);
+
+        queryString = "prefix sao: <http://iot.ee.surrey.ac.uk/citypulse/resources/ontologies/sao.ttl>" +
+                "\nprefix ct: <http://www.insight-centre.org/citytraffic#>" +
+                "\nprefix ns1: <http://purl.oclc.org/NET/ssnx/ssn#>" +
+                "\nprefix tl: <http://purl.org/NET/c4dm/timeline.owl#>" +
+
+                "\nSELECT ?point ?val ?unit ?name ?longitude ?latitude ?pTime" +
                 "\nWHERE {?point a sao:Point ;" +
                 "\nsao:value ?val ;" +
                 "\nsao:hasUnitOfMeasurement ?unit ;" +
@@ -54,19 +73,14 @@ public class ParkingController {
                 "\n_:fNode ct:hasNodeName ?name." +
                 "\n_:fNode ct:hasLongitude ?longitude." +
                 "\n_:fNode ct:hasLatitude ?latitude." +
-                "\n?sEvent a sao:streamEvent;" +
-                "\nsao:time _:sEventTime." +
-                "\n_:sEventTime tl:start ?setStart." +
-                "\n_:sEventTime tl:end ?setEnd." +
                 "\n}" +
                 "LIMIT " + maxEntries;
-        Query query = QueryFactory.create(queryString) ;
-        QueryExecution qexec = QueryExecutionFactory.create(query, service.getModelParking()) ;
-        ResultSet results = qexec.execSelect() ;
-        ResultSetFormatter.outputAsJSON(os, results);
-        //System.out.println(((ByteArrayOutputStream) os).toString());
+        query = QueryFactory.create(queryString);
+        qexec = QueryExecutionFactory.create(query, service.getModelParking());
+        results = qexec.execSelect();
+        ResultSetFormatter.outputAsJSON(os2, results);
 
-        return ((ByteArrayOutputStream) os).toString();
+        return ("{\"durationRange\":" + ((ByteArrayOutputStream) os).toString() + ",\"entries\":" + ((ByteArrayOutputStream) os2).toString()+"}");
     }
 }
 

@@ -1,6 +1,5 @@
 package gd.TPJena.controllers;
 
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
 import gd.TPJena.services.SPQLService;
 import org.apache.jena.query.*;
 import org.json.JSONObject;
@@ -8,10 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
-import java.util.Map;
 
 @RestController
 public class MapController {
@@ -23,7 +20,7 @@ public class MapController {
     ServletContext servletContext;
 
     @CrossOrigin(origins = "http://localhost:4200")
-    @PostMapping("/searchFor/distinct/mapdata")
+    @PostMapping("/searchFor/mapdata")
     public String mapDataDistinct(@RequestBody String msg){
 
         JSONObject parameters = (JSONObject) new JSONObject(msg).get("parameters");

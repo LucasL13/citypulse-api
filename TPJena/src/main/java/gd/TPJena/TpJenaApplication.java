@@ -15,8 +15,7 @@ public class TpJenaApplication {
 	@Autowired
 	SPQLService service;
 
-	@Autowired
-	ServletContext servletContext;
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(TpJenaApplication.class, args);
@@ -24,8 +23,8 @@ public class TpJenaApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void doSomethingAfterStartup() {
-		service.loadData(	servletContext.getRealPath("/WEB-INF/aarhus_parking.ttl"),
-							servletContext.getRealPath("/WEB-INF/aarhus_weather_humidity.ttl"));
+		service.loadData(	"/aarhus_parking.ttl",
+							"/aarhus_weather_humidity.ttl");
 		System.out.println("Data model loaded : API is running");
 	}
 
