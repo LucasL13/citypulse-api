@@ -41,7 +41,9 @@ The front-end service is handled by Angular CLI, supplied with few modules.
     "parameters": {
         "maxEntries":
     }
-}```
+}
+```
+
 Where `maxEntries` is the number of items you wish to retrieve.
 
 This endpoint will return you a JSON parsed following this format : 
