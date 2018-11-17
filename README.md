@@ -1,5 +1,5 @@
 
-<div align="center" style="font-size: 3rem; color: blue"># CityPulse-API</div>
+<div align="center" style="font-size: 3rem; color: blue">CityPulse-API</div>
 ## by Lucas LOIGNON
 
 [Presentation](#presentation)
