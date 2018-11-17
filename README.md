@@ -4,10 +4,10 @@
 
 > Documentation is being completed - stay tuned
 
-⋅⋅* [Presentation](#presentation)
-⋅⋅* [Technologies](#technologies)
-⋅⋅* [Usage](#usage)
-⋅⋅* [API Endpoints](#api-endpoints)
++ [Presentation](#presentation)
++ [Technologies](#technologies)
++ [Usage](#usage)
++ [API Endpoints](#api-endpoints)
 
 
 ## Presentation
