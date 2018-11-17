@@ -4,7 +4,7 @@
 
 > Documentation is being completed - stay tuned
 
-#### The live version of the API Server is here : send your requests @ [http://164.132.51.109:9999](http://164.132.51.109:9999)
+#### The live version of the API Server is here : send your requests POST@[http://164.132.51.109:9999](http://164.132.51.109:9999)
 #### The live version of front-end API-based service is being added on 17/11/2018:6pm, stay tuned !
 
 
