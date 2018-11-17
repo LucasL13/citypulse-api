@@ -1,5 +1,5 @@
 
-# CityPulse-API
+<div align="center"># CityPulse-API</div>
 ## by Lucas LOIGNON
 
 [Presentation](#presentation)
