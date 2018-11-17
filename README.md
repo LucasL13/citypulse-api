@@ -1,6 +1,6 @@
 
 # CityPulse-API
-#### by Lucas LOIGNON
+> by Lucas LOIGNON
 
 > Documentation is being completed - stay tuned
 
