@@ -23,6 +23,6 @@ Where `maxEntries` is the number of items you wish to retrieve (10 is default).
 
 ```
 
-To see what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api#post-searchforparkingall)
+To see what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.parking.all.md)
 
-To see what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api#post-searchforweatherall)
+To see what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.weather.all.md)
