@@ -1,5 +1,6 @@
 
 # CityPulse-API
+## by Lucas LOIGNON
 
 [Presentation](#presentation)
 
@@ -36,6 +37,7 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ## API Endpoints
 
+<p align="center">
 
 | Protocol  | Path  | Documentation  |
 |--------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------|
@@ -43,3 +45,5 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 | POST  | searchFor/mapdata  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.mapdata.md) |
 | POST  | searchFor/parking/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.parking.all.md)  |
 | POST  | searchFor/weather/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.weather.all.md) |
+
+</p>
