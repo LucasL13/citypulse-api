@@ -1,13 +1,13 @@
 
 # CityPulse-API
+> by Lucas LOIGNON
 
-[Presentation](#presentation)
+> Documentation is being completed - stay tuned
 
-[Technologies](#technologies)
-
-[Usage](#usage)
-
-[API Endpoints](#api-endpoints)
++ [Presentation](#presentation)
++ [Technologies](#technologies)
++ [Usage](#usage)
++ [API Endpoints](#api-endpoints)
 
 
 ## Presentation
@@ -36,10 +36,10 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 ## API Endpoints
 
-
 | Protocol  | Path  | Documentation  |
-|---|---|---|
-| POST  | searchFor/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.all.md)  |
-| POST  | searchFor/mapdata  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.mapdata.md) |
-| POST  | searchFor/parking/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.parking.all.md)  |
-| POST  | searchFor/weather/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/documentation/searchFor.weather.all.md) |
+|--------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------|
+| POST  | searchFor/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.all.md)  |
+| POST  | searchFor/mapdata  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.mapdata.md) |
+| POST  | searchFor/parking/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.parking.all.md)  |
+| POST  | searchFor/weather/all  | [See usage](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.weather.all.md) |
+

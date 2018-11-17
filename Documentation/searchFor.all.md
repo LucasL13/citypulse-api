@@ -33,6 +33,6 @@ ormatted JSON Data
 
 ```
 
-For a detailled description about what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api#post-searchforparkingall)
+For a detailled description about what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.parking.all.md)
 
-For a detailled description about what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api#post-searchforweatherall)
+For a detailled description about what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api/blob/master/Documentation/searchFor.weather.all.md)
