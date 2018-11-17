@@ -2,7 +2,7 @@
 # CityPulse-API
 #### by Lucas LOIGNON
 
-`Documentation is being completed - stay tuned`
+> Documentation is being completed - stay tuned
 
 [Presentation](#presentation)
 [Technologies](#technologies)
@@ -35,11 +35,6 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 ###### NB : Do not forget to include the body of the request (JSON formatted) with the requiered `input` parameters. ######
 
 ## API Endpoints
-
-<p align="center">
-aaaa 
- </p>
-
 
 | Protocol  | Path  | Documentation  |
 |--------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------|
