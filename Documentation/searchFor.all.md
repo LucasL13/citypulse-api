@@ -19,10 +19,20 @@ Where `maxEntries` is the number of items you wish to retrieve (10 is default).
 
 ```javascript
 
-{"dataParking": {'someData'}, "dataWeather": {'someData'}}
+ormatted JSON Data
+{  
+   "dataParking":{  
+      "durationRange":{ .. },
+      "entries":{ ..  }
+   },
+   "dataWeather":{  
+      "durationRange":{ .. },
+      "entries":{ .. }
+   }
+}
 
 ```
 
-To see what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api#post-searchforparkingall)
+For a detailled description about what the `dataParking` object does contain, refer to [/searchFor/parkingall](https://github.com/LucasL13/citypulse-api#post-searchforparkingall)
 
-To see what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api#post-searchforweatherall)
+For a detailled description about what the `dataWeather` object does contain, refer to [/searchFor/weatherall](https://github.com/LucasL13/citypulse-api#post-searchforweatherall)
