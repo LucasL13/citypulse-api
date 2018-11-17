@@ -1,8 +1,7 @@
 # [POST] /searchFor/all
 
-This endpoint is the more generic endpoint. 
-
-It return a JSON object composed by the JSON object of the parking data and the JSON object of the weather data.
+> This endpoint is the more generic endpoint. 
+> It return a JSON object composed by the JSON object of the parking data and the JSON object of the weather data.
 
 `Input` : JSON Format 
 ```javascript 

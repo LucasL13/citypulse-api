@@ -4,6 +4,10 @@
 
 > Documentation is being completed - stay tuned
 
+#### The live version of the API Server is here : [http://164.132.51.109:9999](http://164.132.51.109:9999)
+#### The live version of front-end API service is being added on 17/11/2018:6pm, stay tuned !
+
+
 + [Presentation](#presentation)
 + [Technologies](#technologies)
 + [Usage](#usage)
@@ -30,7 +34,7 @@ The front-end service is handled by Angular CLI, supplied with few modules.
 
 **How to send requests :**
 
- `@POST` `localhost:8090/`+`endpoint`
+ `@POST` `localhost:9999/`+`endpoint`
 
 ###### NB : Do not forget to include the body of the request (JSON formatted) with the requiered `input` parameters. ######
 

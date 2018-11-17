@@ -1,7 +1,7 @@
 
 # [POST] /searchFor/parkingall
 
-##### This endpoint may be used in order to get informations about parking occupation in Aarhus, Danemark #####
+> This endpoint may be used in order to get informations about parking occupation in Aarhus, Danemark
 
 `Input` : JSON Format 
 ```javascript 

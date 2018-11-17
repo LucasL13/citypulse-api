@@ -1,7 +1,7 @@
 
 # [POST] /searchFor/mapdata
 
-##### This endpoint may be used in order to get informations about GPS coordinates of parkings linked to the dataset about parking occupation in Aarhus, Danemark #####
+> This endpoint may be used in order to get informations about GPS coordinates of parkings linked to the dataset about parking occupation in Aarhus, Danemark
 
 `Input` : JSON Format 
 ```javascript 
