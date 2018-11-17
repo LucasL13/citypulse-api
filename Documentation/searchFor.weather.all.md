@@ -1,5 +1,7 @@
 
-### [POST] /searchFor/parkingall
+### [POST] /searchFor/weatherall
+
+##### This endpoint may be used in order to get informations about humidity in Aarhus, Danemark #####
 
 `Input` : JSON Format 
 ```javascript 
