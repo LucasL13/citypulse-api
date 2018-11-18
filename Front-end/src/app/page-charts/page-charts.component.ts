@@ -43,7 +43,7 @@ export class PageChartsComponent implements OnInit {
   
 
   getAll(): Observable<DataFormat[]>{
-    return this.http.get<DataFormat[]>("localhost:9999/searchFor/test")
+    return this.http.get<DataFormat[]>("0.0.0.0:9999/searchFor/test")
             .pipe(
               tap(_ => this.log("fetched data")),
               catchError(this.handleError('getHeroes', []))
