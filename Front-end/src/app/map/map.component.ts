@@ -40,7 +40,7 @@ export class MapComponent implements OnInit {
   }
 
   getDataFromAPI(): any {
-    this.http.post(`localhost:9999/searchFor/mapdata`, { "parameters": { "maxEntries": 100 } }).pipe(
+    this.http.post(`127.0.0.1:9999/searchFor/mapdata`, { "parameters": { "maxEntries": 100 } }).pipe(
       map((response: Response) => {
         this.rawData = response;
         var coordinates = response['results']['bindings'];
