@@ -26,7 +26,7 @@ export class DataAllComponent implements OnInit {
   }
 
   getDataFromAPI() : any{
-    this.http.get(`164.132.51.109:9999/searchFor/test`).pipe(
+    this.http.get(`http://164.132.51.109:9999/searchFor/test`).pipe(
       map((response: Response) => {
         this.rawData = response;
       }))
