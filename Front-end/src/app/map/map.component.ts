@@ -43,7 +43,8 @@ export class MapComponent implements OnInit {
     this.http.post(`http://localhost:8090/searchFor/mapdata`, { "parameters": { "maxEntries": 12 } }).pipe(
       map((response: Response) => {
         this.rawData = response;
-        var coordinates = response.results.bindings;
+        var coordinates = response['results']['bindings'];
+        console.log("COORDINATES : " + JSON.stringify(coordinates));
         var markers: any = L.markerClusterGroup();
 
         var bbb = 0;

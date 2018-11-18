@@ -4,11 +4,10 @@
 
 > Documentation is being completed - stay tuned
 
-## LIVE VERSION IS HERE, CHECK IT OUT : [http://164.132.51.109:4200](http://164.132.51.109:4200)
-### Features : Charts, Map and JSON Viewer with data provided by the API Server
 
+#### The demo-live version is avaiable, check it out :  [http://164.132.51.109:4200](http://164.132.51.109:4200)
+###### Features : Charts, Map and JSON Viewer with data provided by the API Server
 #### The live version of the API Server is here : send your requests POST@[http://164.132.51.109:9999](http://164.132.51.109:9999)
-#### The live version of front-end API-based service is being added on 17/11/2018:6pm, stay tuned !
 
 
 + [Presentation](#presentation)
