@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from '../globals';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { DataFormat } from '../dataFormat';
@@ -28,9 +29,11 @@ export class PageChartsComponent implements OnInit {
   dataTest: DataFormat[] = [new DataFormat()];
   
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private globals: Globals) { }
 
   ngOnInit() {
+    this.globals.pageHeaderTitle = 'Charts : A visualisation of raw Data';
+    this.globals.pageHeaderSubtitle = 'Here you can see some charts displaying useful data develired by the API.';
     this.http.get(`http://localhost:8090/searchFor/test`).pipe(
       map((response: Response) => {
         console.log("ALORS ALORS : " + JSON.stringify(response));
