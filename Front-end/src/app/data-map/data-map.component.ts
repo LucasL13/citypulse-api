@@ -28,7 +28,7 @@ export class DataMapComponent implements OnInit {
     console.log('jenvoi request');
     $.ajax({
       type: 'POST',
-      url:'http://localhost:8090/searchFor/coordinates',
+      url:'http://localhost:9999/searchFor/coordinates',
       dataType : 'json',
       contentType: "application/json; charset=utf-8",
       data: JSON.stringify({'parameters': {
